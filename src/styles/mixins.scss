@@ -1,0 +1,4 @@
+@mixin visible-bound ($th: 1, $color: dodgerblue) {
+  outline: #{$th}px solid #{$color};
+  outline-offset: -#{$th}px;
+}

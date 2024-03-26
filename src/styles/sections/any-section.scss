@@ -1,0 +1,33 @@
+.hero {
+  padding-top: 55px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__main-head {
+    font-size: 66px;
+    font-weight: 700;
+    color: var(--color-white);
+  }
+
+  &__webpack-logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("./assets/svg/webpack-logo.svg");
+  }
+
+  &__animation {
+    display: block;
+    width: 320px;
+    height: 320px;
+    border-radius: 33px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/image-004.gif");
+  }
+
+}
