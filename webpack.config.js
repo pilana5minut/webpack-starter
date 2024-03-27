@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 // Определяет через переменную окружения в каком режиме выполняется процесс
 const isDev = process.env.NODE_ENV === 'development'
-const isProd = !isDev
 
 // Формирует имя файла основываясь на значении переменной окружения
 const fileName = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`
@@ -27,6 +26,9 @@ module.exports = {
     port: 9999,
     hot: true,
   },
+
+  // Генерирует карты исходного кода
+  devtool: isDev ? 'eval-source-map' : 'source-map',
 
   // Плагины
   plugins: [
