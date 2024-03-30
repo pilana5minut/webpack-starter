@@ -59,7 +59,37 @@ button {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@include media-min-width-SM() {
+  head {
+    cursor: pointer;
+  }
+}
+
+@include media-min-width-MD() {
+  head {
+    cursor: pointer;
+  }
+}
+
+@include media-min-width-LG() {
+  head {
+    cursor: pointer;
+  }
+}
+
+@include media-min-width-XL() {
+  head {
+    cursor: pointer;
+  }
+}
+
+@include media-min-width-XXL() {
+  head {
+    cursor: pointer;
+  }
 }
