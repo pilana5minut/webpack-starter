@@ -1,9 +1,9 @@
-@import "styles/fonts.scss";
-@import "styles/normalize.scss";
-@import "styles/variables.scss";
-@import "styles/mixins.scss";
-@import "styles/media.scss";
-@import "styles/global.scss";
+@import "styles/common/fonts.scss";
+@import "styles/common/normalize.scss";
+@import "styles/common/variables.scss";
+@import "styles/common/mixins.scss";
+@import "styles/common/media.scss";
+@import "styles/common/global.scss";
 
 // sections
 @import "styles/sections/any-section.scss";
