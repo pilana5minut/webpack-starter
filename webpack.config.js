@@ -23,23 +23,21 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     open: true,
-    port: 9999,
+    port: 8080,
     hot: true,
   },
 
   // Генерирует карты исходного кода
-  devtool: isDev ? 'eval-source-map' : 'source-map',
+  // devtool: isDev ? 'eval-source-map' : 'source-map',
+  devtool: 'source-map',
 
   // Плагины
   plugins: [
-
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
       favicon: path.resolve(__dirname, 'src/favicon.svg'),
     }),
-
     new MiniCssExtractPlugin(),
-
   ],
 
   // Загрузчики
@@ -57,7 +55,8 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          // isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
